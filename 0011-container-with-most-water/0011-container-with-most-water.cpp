@@ -9,10 +9,10 @@ public:
         while(low<high){
             
             int width = high-low;
-            int lamba = min(height[low],height[high]);
-            int area = width * lamba;
+            int length = min(height[low],height[high]);
+            int area = width * length;
             maxWater = max(maxWater,area);
-            if(height[low]<height[high]) low++; //hum pointer ko compare kar rahe the naki height ki value ko
+            if(height[low]<height[high]) low++; 
             else high--;
             
             
