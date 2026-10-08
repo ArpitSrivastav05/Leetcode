@@ -6,12 +6,12 @@ public:
         int count = 0;
         while(i<j){
             if(s[i]!=s[j]){
-                return 2;
+                return 2;//kyuki isme sirf a aur b hi hai 
             }
             i++;
             j--;
 
         }
-        return 1;
+        return 1;//agar pura s hi pailindrome hua to
     }
 };
