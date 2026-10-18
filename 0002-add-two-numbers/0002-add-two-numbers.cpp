@@ -18,8 +18,8 @@ public:
         int carry = 0;
 
         while(temp1 != nullptr || temp2 !=nullptr){
-            int sum = carry;
-            
+            int sum = carry;//carry ko sum me add kar rahe hai
+
             if(temp1) sum = sum = sum + temp1->val;
             if(temp2) sum =  sum + temp2->val;
 
@@ -33,7 +33,7 @@ public:
 
         }
 
-        if(carry){
+        if(carry){//agar end me carry bach gaya to
             ListNode* newNode = new ListNode(carry);
             curr->next = newNode;
         }
